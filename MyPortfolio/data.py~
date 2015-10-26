@@ -1,0 +1,389 @@
+#!/bin/env python3
+#-*- coding: utf-8 -*-
+import datetime
+import json
+from pprint import pprint
+from operator import itemgetter
+
+
+def load():					#loads json file into variable
+	with open('data.json') as data_file:    
+		data = json.load(data_file)
+	return data
+
+def get_project_count(db):
+	return len(db)
+
+def get_project_c(db):
+	lst=[]
+	for row in db:
+		if 'project_no' in row:
+			lst.append(row['project_no'])
+	return lst
+
+		
+def get_project(db, project_id):
+	lst=get_project_c(db)
+	b=lst.index(project_id)
+	return db[b]
+
+"""def search(db, sort_by='start_date', sort_order='desc', techniques=None, search=None, search_fields=None):
+	found = []
+	a = sorting(db, sort_by, sort_order)
+	if search == None:
+		if not search_fields == []:
+			if techniques == []:
+				if search_fields == None:
+					for a in range(len(db)):
+						if any(search in string for string in db[a]):
+							found.append(db[a])						#project med sträng i
+					#print([s for s in db[a] if search in s])                      #specific 'sträng'
+				else:
+					for a in range(len(db)):
+						if any(search in string for string in search_fields):
+							found.append(db[a])
+			else:		
+				if search_fields == None:
+					if techniques == None:
+						for a in range(len(db)):
+							if any(search in string for string in db[a]):
+								found.append(db[a])
+					elif 1==len(techniques):
+						for a in range(len(db)):
+							if techniques[0] in db[a]['techniques_used']:
+								found.append(db[a])
+					elif 2==len(techniques):
+						for a in range(len(db)):
+							if techniques[0] and techniques[1] in db[a]['techniques_used']:
+								found.append(db[a])
+					elif 3==len(techniques):
+						for a in range(len(db)):
+							if techniques[0] and techniques[1] and techniques[2] in db[a]['techniques_used']:
+								found.append(db[a])
+					elif 4==len(techniques):
+						for a in range(len(db)):
+							if techniques[0] and techniques[1] and techniques[2] and techniques[3] in db[a]['techniques_used']:
+								found.append(db[a])
+					elif 5==len(techniques):
+						for a in range(len(db)):
+								if techniques[0] and techniques[1] and techniques[2] and techniques[3] and techniques[4] in db[a]['techniques_used']:
+									found.append(db[a])
+					else:
+						pass
+	
+	if not search_fields == []:
+		if techniques == []:
+			if search_fields == None:
+				for a in range(len(db)):
+					if any(search in string for string in db[a]):
+						found.append(db[a])						#project med sträng i
+				#print([s for s in db[a] if search in s])                      #specific 'sträng'
+			else:
+				for a in range(len(db)):
+					if any(search in string for string in search_fields):
+						found.append(db[a])
+		else:		
+			if search_fields == None:
+				if techniques == None:
+					for a in range(len(db)):
+						if any(search in string for string in db[a]):
+							found.append(db[a])
+				elif 1==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used']:
+							if any(search in string for string in db[a]):
+								found.append(db[a])
+				elif 2==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] and techniques[1] in db[a]['techniques_used']:
+							if any(search in string for string in db[a]):
+								found.append(db[a])
+				elif 3==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] and techniques[1] and techniques[2] in db[a]['techniques_used']:
+							if any(search in string for string in db[a]):
+								found.append(db[a])
+				elif 4==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] and techniques[1] and techniques[2] and techniques[3] in db[a]['techniques_used']:
+							if any(search in string for string in db[a]):
+								found.append(db[a])
+				elif 5==len(techniques):
+					for a in range(len(db)):
+							if techniques[0] and techniques[1] and techniques[2] and techniques[3] and techniques[4] in db[a]['techniques_used']:
+								if any(search in string for string in db[a]):
+									found.append(db[a])
+				else:
+					pass
+	if found == []:
+		return 'error'
+	else:
+		return sorting(found, sort_by, sort_order)		
+"""
+
+def search(db, sort_by='start_date', sort_order='desc', techniques=None, search=None, search_fields=None):
+	found = []
+	if search == None:
+		if search_fields == None:
+			if techniques == None:
+				for a in range(len(db)):
+					found.append(db[a])
+			else:		
+				if 1==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used']:
+							found.append(db[a])
+				elif 2==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used']:
+							found.append(db[a])
+				elif 3==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used']:
+							found.append(db[a])
+				elif 4==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used']:
+							found.append(db[a])
+				elif 5==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used'] and techniques[4] in db[a]['techniques_used']:
+							found.append(db[a])
+				elif 6==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used'] and techniques[4] in db[a]['techniques_used'] and techniques[5] in db[a]['techniques_used']:
+							found.append(db[a])
+				elif 7==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] and techniques[1] and techniques[2] and techniques[3] and techniques[4] and techniques[5] and techniques[6] in db[a]['techniques_used']:
+							found.append(db[a])
+				elif 8==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used'] and techniques[4] in db[a]['techniques_used'] and techniques[5] in db[a]['techniques_used'] and techniques[6] in db[a]['techniques_used'] and techniques[7] in db[a]['techniques_used']:
+							found.append(db[a])
+				elif 9==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used'] and techniques[4] in db[a]['techniques_used'] and techniques[5] in db[a]['techniques_used'] and techniques[6] in db[a]['techniques_used'] and techniques[7] in db[a]['techniques_used'] and techniques[8] in db[a]['techniques_used']:
+							found.append(db[a])
+				else:
+					pass
+
+	else:
+		if search_fields == None:
+			if techniques == None:
+				for a in range(len(db)):
+					project=True
+					for string in db[a]:
+						string=string
+						if search in str(str(db[a][string])) and project == True:
+							project=False
+							found.append(db[a])
+						
+
+			else:		
+				if 1==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				elif 2==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				elif 3==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				elif 4==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				elif 5==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used'] and techniques[4] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				elif 6==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used'] and techniques[4] in db[a]['techniques_used'] and techniques[5] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				elif 7==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used'] and techniques[4] in db[a]['techniques_used'] and techniques[5] in db[a]['techniques_used'] and techniques[6] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				elif 8==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used'] and techniques[1] in db[a]['techniques_used'] and techniques[2] in db[a]['techniques_used'] and techniques[3] in db[a]['techniques_used'] and techniques[4] in db[a]['techniques_used'] and techniques[5] in db[a]['techniques_used'] and techniques[6] in db[a]['techniques_used'] and techniques[7] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				elif 9==len(techniques):
+					for a in range(len(db)):
+						if techniques[0] in db[a]['techniques_used']  and techniques[1] in db[a]['techniques_used']  and techniques[2] in db[a]['techniques_used']  and techniques[3] in db[a]['techniques_used']  and techniques[4] in db[a]['techniques_used']  and techniques[5] in db[a]['techniques_used']  and techniques[6] in db[a]['techniques_used']  and techniques[7] in db[a]['techniques_used']  and techniques[8] in db[a]['techniques_used']:
+							project=True
+							for string in db[a]:
+								string=str(string)
+								if search in str(db[a][string]) and project == True:
+									project=False
+									found.append(db[a])
+				else:
+					pass
+	if search_fields != None:
+		for a in db:
+			for b in a:
+				for field in search_fields:
+					if search == None:
+						if techniques == None:
+							if field == b:
+								found.append(a)
+						else:
+							tchs=[t for t in techniques if t in a['techniques_used']]							
+							if len(tchs) == len(techniques):
+								if field ==b:
+									found.append(a)
+					else:
+						if techniques == None:
+							if field == b:
+								if search in a[b]:
+									found.append(a)
+						else:
+							tchs=[t for t in techniques if t in a['techniques_used']]							
+							if len(tchs) == len(techniques):
+								if field ==b:
+									if search in a[b]:
+										found.append(a)
+				
+
+	if found == []:
+		return 'error'
+	else:
+		return sorting(found, sort_by, sort_order)
+
+
+def sorting(db, sort_by, sort_order):
+	lst = []
+	lst2 = []
+	lst3 = []
+	
+	for a in range(len(db)):
+		dic=db[a]
+		lst.append(dic.get(sort_by))
+		lst2.append(dic.get(sort_by))
+	lst2.sort(key=lambda x: x[0:])
+	for a in lst:
+		lst3.append(lst2.index(a))
+	if sort_order == 'asc':
+		data=[line for (time,line) in sorted(zip(lst3, db))]
+		data.reverse()
+		return data
+	else:
+		data=[line for (time,line) in sorted(zip(lst3, db))]
+		return data	
+	
+			
+def get_fields(db):
+	lst=[]
+	for a in db:
+		for b in a:
+			if b not in lst:
+				lst.append(b)
+	return lst
+			
+		
+	
+def get_techniques(db):
+	u = []
+	for i in db:
+		u.extend(i['techniques_used'])			#listing all techniques
+	tech = list(set(u))					#Putting them in same list
+	u = sorted(tech)					#Sorting alphabetically
+	return u
+
+def get_technique_stats(db):
+	dic={}
+	b = get_techniques(db)
+	for a in range(len(b)):
+		string=b[a]
+		dic[string]=[]
+		for c in range(len(db)):
+			if string in db[c]['techniques_used']:
+				dic.setdefault(string, []).append({'id':int(db[c]['project_no']),'name':(db[c]['project_name'])})			#adding dictionary inside list for every technique
+	return dic
+
+db = load()
+#pprint(db[0:2])
+#pprint(get_project(db,1))
+#techniques = get_techniques(db)
+#pprint(techniques)
+#a = search(db, sort_by='start_date', sort_order='desc', techniques=None, search='Hello', search_fields=None )
+#pprint(a)
+
+#techs=get_techniques(db)
+#print(techs)
+#b = search(db, sort_by='project_name', sort_order='desc', techniques=None, search=None, search_fields=None )
+#pprint(b)
+#tchs=get_technique_stats(db)
+#temp=[]
+#for a in tchs:
+#	temp.append(a)
+#	temp.append([])
+#	c=temp.index(a)+1
+#	for b in tchs[a]:
+#		temp[c].append(b['name'])
+#		temp[c].append(b['id'])
+
+#for a in techs:
+#	print(tchs[a])
+#for a in range(len(b)):
+	#pprint(b[a])
+#abc=get_technique_stats(db)
+#pprint(tchs)	
+#pprint(sorting(db, 'project_no', 'asc'))
+#pprint(a)
+#with open('data.json') as json_data:
+#	d= json.load(json_data)
+#	json_data.close()
+#	pprint(d)
+
+#pj=get_project_c(db)
+
+#pprint(pj)
+#b = search(db, sort_by='start_date', sort_order='desc', techniques=['git', 'LOLCODE'], search=None, search_fields=None)
+#pprint(b)
+

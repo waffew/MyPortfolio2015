@@ -1,0 +1,27 @@
+<!doctype html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<title> Portfolio </title>
+		<link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style/style.css') }}">
+	</head>
+
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block header %}
+<h1 id=logo><a id=logo href="{{ url_for('index') }}">Portfolio TDP003</a></h1>
+<div id="links">
+	<a id=home href="{{ url_for('index') }}">Home</a><a id=list href="{{ url_for('listPage') }}">List</a><a id=techniques href="{{ url_for('techniques') }}">Techniques</a>
+</div>
+{% endblock %}
+{% block body %}{% endblock %}
+<footer id=footer>
+		<p>Website v0.4, by Alfred Niklasson.</p>
+</footer>

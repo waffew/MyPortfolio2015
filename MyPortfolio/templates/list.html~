@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+<div id="content">
+	<h1 id=index>List</h1>
+	
+	<form action="/list/search" method="Post">
+	<div id=Searchf>Search<br>
+		<input id=srch type="text" name="Search">
+		<select name="Sort">
+			<option>Sort_by</option>
+			<option value="date">New>Old</option>
+			<option value="etad">Old>New</option>
+			<option value="abcd">Alphabet</option>
+			<option value="project_no">Project_no</option>
+		</select>
+		<br><input id=button type=submit value=search>
+		<div id=fieldset><h3>Filters:</h3>
+			{% for a in techniques %}
+				<input type="checkbox" name="filters" value={{a}}>{{a}}
+			{% endfor %}
+		</div>
+		<div id=fields><h3>Search_fields:</h3>
+			{% for a in field %}
+				<input type="checkbox" name="search_fields" value={{a}}>{{a}}
+			{% endfor %}
+		</div>
+	</div>
+	</form>
+	<p>{{Stext}}</p>
+	<div id="projects">
+	{% if srch == True %}
+		{% for row in projects %}
+			<a id=project href="{{ url_for('project', pid=row['project_no']) }}"><div id="Project">
+			<div class="container"><img src="{{url_for(row['small_image'])}}"></div>
+			<br><h1>{{row['project_name']}}</h1>
+			<p>{{row['short_description']}}</p><br><br><br>
+			</div></a>
+		{% endfor %}
+	{% endif %}
+	</div>
+</div>
+{% endblock %}

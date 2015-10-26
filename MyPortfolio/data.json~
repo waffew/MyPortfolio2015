@@ -1,0 +1,572 @@
+[
+    {
+        "start_date": "2015-08-30",
+        "short_description": "Utveckling av ett portföljsystem",
+        "course_name": "TDP003 Egen datormiljö",
+        "long_description": "Jag utvecklade ett system för att i text och bild beskriva olika projekt användaren av systemet genomfört. Systemet är generellt användbart inom många områden. Det kan användas som galleri för en konstnär, produktportfölj för en snickare, skrytvägg för en advokat eller i mitt fall som komplement till CV för potentiella arbetsgivare. Systemet har fyra huvudskliga sidor: en huvudsida med information om portföljägaren, en sida som listar alla produkter/projekt i portföljen, en sida som listar alla tekniker som portföljagaren använt, och i vilket projekt. Detta ger en bra bild över den teknik portföljägaren behärskar, samt en sida som tillåter sökning och filtrering a projekt.",
+        "group_size": 2,
+        "academic_credits": "6",
+        "external_link": "https://en.wikipedia.org/wiki/Artist%27s_portfolio",
+        "small_image": "http://progressions.prssa.org/wp-content/uploads/2013/02/portfolio-icon.gif",
+        "techniques_used": [
+            "python",
+            "json",
+            "html",
+            "css",
+            "jinja",
+            "flask",
+            "git",
+            "latex",
+            "gimp"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback",
+            "https://gitlab.ida.liu.se/klaar36/tdp003-portfolio-example-data",
+            "https://www.ida.liu.se/~TDP003/"
+        ],
+        "project_name": "Portfolio",
+        "course_id": "TDP003",
+        "end_date": "2014-10-20",
+        "project_no": 1,
+        "big_image": "http://sites.psu.edu/zhenyangli/wp-content/uploads/sites/28301/2015/06/Portfolio-image.gif"
+    },
+    {
+        "start_date": "2015-11-02",
+        "short_description": "Hornet Pong",
+        "course_name": "TDP005 Projekt: Objektorienterat system",
+        "long_description": "Vi utvecklade det objektorienterade spelet Hornet Ping Pong som är en kul variant av klassiska Pong. I spelet är bollen utbytt mot en bålgeting som ska bollas över till motspelaren, men bara om om den kommer med huvudet först. Kommer den med taggen först gäller det att akta sig. Genom att träffa med sidfart kan spelarna sätta skruv på getingen för att göra det mer besvärligt för motståndaren.",
+        "group_size": 2,
+        "academic_credits": "6",
+        "external_link": "",
+        "small_image": "",
+        "techniques_used": [
+            "c++",
+            "sdl",
+            "stl",
+            "object-orientation",
+            "gimp",
+            "git",
+            "latex"
+        ],
+        "linkbacks": [
+            "https://www.ida.liu.se/~TDP005/"
+        ],
+        "project_name": "Hornet Pong",
+        "course_id": "TDP003",
+        "end_date": "2014-12-18",
+        "project_no": 2,
+        "big_image": ""
+    },
+    {
+        "start_date": "2014-04-20",
+        "short_description": "Just Blaze",
+        "course_name": "TDP420: Pro Blazing",
+        "long_description": "Gr8 game m8 I r8 8/8.",
+        "group_size": "420",
+        "academic_credits": "1337",
+        "lulz_had": "69",
+        "external_link": "http://fourtwentyday.com/",
+        "small_image": "https://media3.giphy.com/media/uwsxhPG9UO5FK/200_s.gif",
+        "techniques_used": [
+            "c++",
+            "fuck",
+            "LOLCODE",
+            "html",
+            "css",
+            "jinja",
+            "flask"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback",
+            "https://gitlab.ida.liu.se/klaar36/tdp003-portfolio-example-data"
+        ],
+        "project_name": "Blaze Craze",
+        "course_id": "TDP420",
+        "end_date": "2015-04-20",
+        "project_no": 69,
+        "big_image": "http://api.ning.com/files/VrpMXk5gFE3sra*pg58Sr9sPv5AHSR-u8t8rj5z3Pl3e3wy6AUm2zPq1F79qp3TA3J3-O7w5MZxGVHETAO2axQuIwguNLkTs/420spiral.jpg"
+    },
+    {
+        "start_date": "2014-12-13",
+        "short_description": "Feeding Cat.",
+        "course_name": "Cat and you 101.",
+        "long_description": "A simple daily routine when i feed my cat.",
+        "group_size": 1,
+        "academic_credits": "0",
+        "lulz_had": "Plenty",
+        "external_link": "",
+        "small_image": "http://www.stockvault.net/data/2010/10/17/115393/small.jpg",
+        "techniques_used": [
+            "lifting",
+            "pouring",
+            "petting"
+        ],
+        "linkbacks": [
+            ""
+        ],
+        "project_name": "Give cat food",
+        "course_id": "Homeschool",
+        "end_date": "20XX-XX-XX",
+        "project_no": 3,
+        "big_image": "http://www.turbophoto.com/Free-Stock-Images/Images/Dark%20Cat.jpg"
+    },
+    {
+        "start_date": "2015-08-18",
+        "short_description": "En egen blogg",
+        "course_name": "TDP001 Handhavande av datormiljö Webintroduktion",
+        "long_description": "En hemsida där man kan skriva vad man gjort dag för dag och redovisa uppgifter för andra att se.",
+        "group_size": 1,
+        "academic_credits": "?",
+        "lulz_had": "0",
+        "external_link": "https://www.ida.liu.se/~TDP001/material/web.sv.shtml",
+        "small_image": "http://thumb7.shutterstock.com/display_pic_with_logo/2117717/230245711/stock-photo-digital-dictionary-blog-follow-like-concept-230245711.jpg",
+        "techniques_used": [
+            "html5",
+            "css3"
+        ],
+        "linkbacks": [],
+        "project_name": "Blogg",
+        "course_id": "TDP001",
+        "end_date": "2015-09-04",
+        "project_no": 4,
+        "big_image": ""
+    },
+    {
+        "start_date": "2011-12-15",
+        "short_description": "Japanska konstverk",
+        "course_name": "",
+        "long_description": "Min japanska mor lärde mig att tillverka japansk konst och hantverk. Det var bland annat broderade tavlor med blommotiv (stora bilden) och även på fåglar. Konsten att vika papper, origami, har jag också fått pröva på. Det mest avancerade som vikits är tranan med fyra små tranor (lilla bilden) som vikits av ett enda papper. ",
+        "group_size": 1,
+        "academic_credits": "0",
+        "lulz_had": "25",
+        "external_link": "",
+        "small_image": "http://asta.jaxner.com/japaneseartwork/images/origami.jpg",
+        "techniques_used": [
+            "brodering",
+            "origami"
+        ],
+        "linkbacks": [],
+        "project_name": "Japanese Artwork",
+        "course_id": "",
+        "end_date": "2013-06-18",
+        "project_no": 73,
+        "big_image": "http://asta.jaxner.com/japaneseartwork/images/brodyrtavlor.jpg"
+    },
+    {
+        "start_date": "2015-06-24",
+        "short_description": "Tärningssimulator för tärning av valfri storlek",
+        "course_name": "Beginner python",
+        "long_description": "Påhittat projekt i vilket vi utvecklade ett python programm för att simulera tärningar av valfir storlek. Det programmet gör är att den tar ut ett slumpat nummer mellan 1-6 eller annat värde beroende på vald storlek av tärning.",
+        "group_size": 2,
+        "academic_credits": "6",
+        "lulz_had": "1337",
+        "external_link": "https://sv.wikipedia.org/wiki/T%C3%A4rning",
+        "small_image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Dice.jpg",
+        "techniques_used": [
+            "python"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback"
+        ],
+        "project_name": "Tärningssimulator",
+        "course_id": "TDPTärning",
+        "end_date": "2016-10-20",
+        "project_no": 99,
+        "big_image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Dados_4_a_20_caras.jpg"
+    },
+    {
+        "start_date": "2015-03-07",
+        "short_description": "Not at all racist",
+        "course_name": "TDP005 Projekt: Racism in games",
+        "long_description": "We created a game about an Italian plumber created by japansese,who speaks English, looks like a Mexican, jumps like a black man and grabs coins like a jew",
+        "group_size": 2,
+        "academic_credits": "9001",
+        "lulz_had": "8",
+        "external_link": "http://9gag.com/gag/4961351/don-t-be-racist-be-like-mario",
+        "small_image": "http://ic2.joydownload.com/content/icons/139/530dffc6c3e14.png",
+        "techniques_used": [
+            "c++",
+            "sdl",
+            "stl",
+            "object-orientation",
+            "git",
+            "latex",
+            "python"
+        ],
+        "linkbacks": [
+            "https://www.ida.liu.se/~TDP005/"
+        ],
+        "project_name": "Be like Mario",
+        "course_id": "NORASICM042",
+        "end_date": "2015-07-22",
+        "project_no": 10,
+        "big_image": "http://vignette1.wikia.nocookie.net/mario/images/1/15/MarioNSMB2.png/revision/latest?cb=20120816162009"
+    },
+    {
+        "start_date": "2015-04-07",
+        "short_description": "Ro-bin That real Hero",
+        "course_name": "TDP008 Robin is the real hero",
+        "long_description": "We wanted a game that proves to the world that Batman is highly overrated and that Robin is the real hero",
+        "group_size": 2,
+        "academic_credits": "42",
+        "lulz_had": "7",
+        "external_link": "https://sv.wikipedia.org/wiki/Robin_(seriefigur)",
+        "small_image": "http://i.ebayimg.com/00/s/MTIwMFgxMjAw/z/9XMAAOxyYSdS~DdI/$_14.JPG",
+        "techniques_used": [
+            "c++",
+            "sdl",
+            "object-orientation",
+            "git",
+            "latex"
+        ],
+        "linkbacks": [
+            "https://www.ida.liu.se/~TDP005/"
+        ],
+        "project_name": "The Real Hero of Gotham",
+        "course_id": "ROBIN007",
+        "end_date": "2015-09-18",
+        "project_no": 11,
+        "big_image": "http://www.previewsworld.com/catalogimages/stk_images/stk640001-660000/stk650175.jpg"
+    },
+    {
+        "start_date": "2015-09-12",
+        "short_description": "En ljusblå Tavla",
+        "course_name": "TDP000: Onödig kunskap",
+        "long_description": "Genom att ha spenderat så mycket tid på att måla en ljusblå tavla har vi uppnått en nyfunnen nivå av tristess och galenskap. Vi satt i flera veckor och grubblade över färgvalet innan vi kom fram till att just en ljusblå tavla skulle passa bättre än en nästanljusblå tavla. Vi är genier.",
+        "group_size": 11,
+        "academic_credits": "2",
+        "external_link": "",
+        "small_image": "static/images/lightblue_small.jpg",
+        "techniques_used": [
+            "pensel",
+            "tavla",
+            "penselpåtavla",
+            "färgpåpensel",
+            "färg",
+            "photoshop"
+        ],
+        "linkbacks": [
+            "https://www.google.se"
+        ],
+        "project_name": "Ljusblå Tavla",
+        "course_id": "TDP000",
+        "end_date": "2015-10-22",
+        "project_no": 176,
+        "big_image": "static/images/hamsterfighter_small.jpg"
+    },
+    {
+        "start_date": "2015-08-28",
+        "short_description": "En hamstersimulator",
+        "course_name": "TDP002: Imperativ Programmering",
+        "long_description": "Hamstrar och krig går väldigt bra ihop. Det är vetenskapligt bevisat någonstans. För att riktiga krig är ganska omysiga så finns numera ett bättre alternativ: Hamsterfighter! Bli coach åt en blodlysten hamster och träna upp den till att vinna finfina priser i arenan. One versus one. Last fluffball standing wins!",
+        "group_size": 1,
+        "academic_credits": "0",
+        "external_link": "",
+        "small_image": "static/images/lightblue_small.jpg",
+        "techniques_used": [
+            "python"
+        ],
+        "linkbacks": [
+            "http://howdovaccinescauseautism.com/"
+        ],
+        "project_name": "Hamsterfighter",
+        "course_id": "TDP002",
+        "end_date": "2015-09-15",
+        "project_no": 78,
+        "big_image": "static/images/hamsterfighter.jpg"
+    },
+    {
+        "start_date": "2012-02-20",
+        "short_description": "Utveckling av jobbsökarscript",
+        "course_name": "TDP453 Hitta anställning",
+        "long_description": "Vi utvecklade en script som söker efter nyckelord i jobbannonser och ansöker för de som är relevanta för användarens angivna kunskaper. Idén följer principen att fler sökta jobb ger högre chans för anställning.",
+        "group_size": 3,
+        "academic_credits": "6",
+        "lulz_had": "0",
+        "external_link": "http://jobb.blocket.se/?gclid=COb3uP_ZisgCFWHbcgodYmEDmw",
+        "small_image": "http://spyros.zoupanos.net/images/cv.png",
+        "techniques_used": [
+            "python",
+            "html",
+            "json",
+            "javascript",
+            "myquery",
+            "jinja",
+            "flask",
+            "git"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback",
+            "https://gitlab.ida.liu.se/nicst704/labbar-ip"
+        ],
+        "project_name": "Jobscript",
+        "course_id": "TDP453",
+        "end_date": "2015-03-14",
+        "project_no": 83,
+        "big_image": "http://www.global-workplace.com/wp-content/uploads/2014/03/15468283-cv-curriculum-vitae-concetto-di-tag-cloud-parola-su-sfondo-bianco.jpg"
+    },
+    {
+        "start_date": "2014-09-05",
+        "short_description": "Utveckling av spel",
+        "course_name": "TDP003 Egen datormiljö",
+        "long_description": "Jag utvecklade ett spel där man hoppar mellan olika plattformar. Det går ut på att komma så långt åt höger som möjligt.",
+        "group_size": 1,
+        "academic_credits": "3",
+        "lulz_had": "51",
+        "external_link": "https://en.wikipedia.org/wiki/Platform_game",
+        "small_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Kasteroids.svg/100px-Kasteroids.svg.png",
+        "techniques_used": [
+            "c++",
+            "git",
+            "gimp"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback",
+            "https://gitlab.ida.liu.se/klaar36/git-credit-2015"
+        ],
+        "project_name": "Plattformarspel",
+        "course_id": "TDP006",
+        "end_date": "2015-09-22",
+        "project_no": 84,
+        "big_image": "http://indiegames.com/walker%20new.png"
+    },
+    {
+        "start_date": "1991-12-28",
+        "short_description": "Batman",
+        "course_name": "TDPBAT: Batman Oriented Programming",
+        "long_description": "I am batman. Don't try me.",
+        "group_size": "22",
+        "academic_credits": "6",
+        "lulz_had": "infinite",
+        "external_link": "https://sv.wikipedia.org/wiki/batman",
+        "small_image": "http://www.seriesam.com/pc/laderjatte1969.jpg",
+        "techniques_used": [
+            "c++",
+            "python",
+            "html",
+            "css",
+            "jinja",
+            "flask"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback",
+            "https://gitlab.ida.liu.se/klaar36/tdp003-portfolio-example-data",
+            "https://www.ida.liu.se/~TDP003/"
+        ],
+        "project_name": "Batman ",
+        "course_id": "TDPBAT",
+        "end_date": "2016-12-28",
+        "project_no": 77,
+        "big_image": "https://s-media-cache-ak0.pinimg.com/736x/10/03/82/100382ff28ebf1ce6c303b87aa722d53.jpg"
+    },
+    {
+        "start_date": "2012-12-31",
+        "short_description": "Missi0n imp0ssible",
+        "course_name": "TDP000: Dividing by zer0",
+        "long_description": "Acc0rding t0 the legends, n00ne has survived this c0urse.",
+        "group_size": "0",
+        "academic_credits": "0",
+        "lulz_had": "0",
+        "external_link": "https://en.wikipedia.org/wiki/Division_by_zero",
+        "small_image": "https://www.mathsisfun.com/numbers/images/divide-by-zero.jpg",
+        "techniques_used": [
+            "c++",
+            "python",
+            "html",
+            "css",
+            "jinja",
+            "flask"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback",
+            "https://gitlab.ida.liu.se/klaar36/tdp003-portfolio-example-data",
+            "https://www.ida.liu.se/~TDP003/"
+        ],
+        "project_name": "Division by zero",
+        "course_id": "TDP000",
+        "end_date": "0000-00-00",
+        "project_no": 79,
+        "big_image": "http://static.fjcdn.com/pictures/Portals_78710e_773590.jpg"
+    },
+    {
+        "start_date": "2009-04-02",
+        "short_description": "Pubs with a Fire",
+        "course_name": "TDP666 Projekt: Grottan och Plajan",
+        "long_description": "Pubs with a Fire är en webb applikation som låter användare hitta, lägga till och bedöma pubbar och restauranger som har en varm och mysig eldstad i lokalen. Det finns för närvarande över 800 pubbar och restauranger över hela USA, Irland, England, Australien m.m.",
+        "group_size": 3,
+        "academic_credits": "6",
+        "lulz_had": "9001",
+        "external_link": "https://en.wikipedia.org/wiki/Artist%27s_portfolio",
+        "small_image": "http://timmyomahony.com/assets/projects/pubs-with-a-fire/icon-cff4addf3d97bfc0c211ba727aa6eb6a.png",
+        "techniques_used": [
+            "JavaScript",
+            "Django"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback",
+            "https://www.zombo.com",
+            "https://www.ida.liu.se/~TDP003/"
+        ],
+        "project_name": "Pubs with a Fire",
+        "course_id": "TDP003",
+        "end_date": "2013-02-07",
+        "project_no": 21,
+        "big_image": "http://timmyomahony.com/assets/projects/pubs-with-a-fire/screenshot-1-b170a382a15a465397d7618f48fcbd8f.png"
+    },
+    {
+        "start_date": "1999-12-31",
+        "short_description": "Millenium Puzzle",
+        "course_name": "PSA101: Egyptiens Mysterier",
+        "long_description": "Det här windows 95 programmet är till för att tjäna pengar på alla oroade människor över årsskiftet. Om Millenium Puzzle installeras så 'skyddas' kunderna från den imminenta domedagen.",
+        "group_size": 1,
+        "academic_credits": "6",
+        "lulz_had": "2000",
+        "external_link": "https://sv.wikipedia.org/wiki/Millenniebuggen",
+        "small_image": "http://vignette1.wikia.nocookie.net/yugioh/images/a/a6/MillenniumPuzzle.jpg/revision/latest?cb=20070805234053",
+        "techniques_used": [
+            "Python",
+            "Mindfuck",
+            "C#"
+        ],
+        "linkbacks": [
+            "https://en.wikipedia.org/wiki/Linkback",
+            "https://www.klockren.se",
+            "https://www.ida.liu.se/~TDP003/"
+        ],
+        "project_name": "Millenium Puzzle",
+        "course_id": "TDP003",
+        "end_date": "2000-01-01",
+        "project_no": 5,
+        "big_image": "http://orig12.deviantart.net/dbbd/f/2011/077/9/0/millennium_puzzle_by_daleksam-d3bvzzr.png"
+    },
+    {
+        "start_date": "2015-09-21",
+        "short_description": "Projekt testning av stora bokstäver",
+        "course_name": "TDP003 Egen datormiljö",
+        "long_description": "Autentiskt projekt om skapandet av ett test, ett test med syftet att se om datalagret klarar av att hantera tekniker med stora bokstäver i sig",
+        "group_size": 3,
+        "academic_credits": "0",
+        "lulz_had": "None",
+        "external_link": "",
+        "small_image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Human-dialog-error.svg",
+        "techniques_used": [
+            "Python",
+            "jinja",
+            "Flask",
+            "git",
+            "latex"
+        ],
+        "linkbacks": [
+            "https://www.ida.liu.se/~TDP003/"
+        ],
+        "project_name": "Projekt test",
+        "course_id": "TDP003",
+        "end_date": "2015-09-22",
+        "project_no": 80,
+        "big_image": ""
+    },
+    {
+        "start_date": "2014-08-30",
+        "short_description": "Jam jam jet en jetmotor utav en syltburk",
+        "course_name": "Gymnasie",
+        "long_description": "Autentiskt gymnasie projekt om byggandet av en jetmotor utav en syltburk, denna motor blev dock inte specielt effektiv men detvar ett intressant projekt. Projektet var pågående i ungefär ett halv år och innehöll mycket testning för att kunna förbättra. Motorn var väldigt okonstant i sitt beteende och projektet kunde säkert planerats bättre och utförts bättre ifall vi hade planerat det bättre.",
+        "group_size": 3,
+        "academic_credits": "10",
+        "lulz_had": "Many",
+        "external_link": "https://en.wikipedia.org/wiki/Valveless_pulse_jet",
+        "small_image": "",
+        "techniques_used": [
+            "syltburk",
+            "nitromethane",
+            "borr"
+        ],
+        "linkbacks": [
+            ""
+        ],
+        "project_name": "Jamjarjet",
+        "course_id": "Gymnasie",
+        "end_date": "2015-03-18",
+        "project_no": 86,
+        "big_image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Jar-jar-jet.jpg"
+    },
+    {
+        "start_date": "2014-10-02",
+        "short_description": "En kopia på det klassiska Space Invader Spelet (fiktivt projekt)",
+        "course_name": "TDP005 Projekt: Objektorienterat system",
+        "long_description": "Vi utvecklade ett en kopia på det klassiska spelet space invaders. Vi ställde först upp en egen krav spec vad spelet skulle kunna göra. Därefter skrev vi en övergripande pseudokod och bröt ner spelet i flera moduler, och varje modul i flera stora funktioner. Arbetet med att koda spelet kunde därefter göras paralellet. Vi synchade med varandra regelbundet och gick igenom varandras kod så vi alltid var medvetna om koden i sin helhet. Projektet tog ungefär 4 veckor att koda. Vi lärde oss väldigt mycket om objektorienterad kodning under detta projekt. (Obs detta är ett fiktivt projekt, bilderna är tagna från www.drchaos.com, och gamefabrique.com)",
+        "group_size": 2,
+        "academic_credits": "7,5",
+        "lulz_had": "9999",
+        "external_link": "https://sv.wikipedia.org/wiki/Space_Invaders",
+        "small_image": "http://www.drchaos.com/wp-content/uploads/2014/09/space_invader.jpg",
+        "techniques_used": [
+            "photoshop",
+            "html",
+            "c++",
+            "git",
+            "latex"
+        ],
+        "linkbacks": [
+            "https://www.ida.liu.se/~MAP999/"
+        ],
+        "project_name": "Space Invader Kopia",
+        "course_id": "TDP005",
+        "end_date": "2014-12-18",
+        "project_no": 81,
+        "big_image": "http://gamefabrique.com/storage/screenshots/snes/space-invaders-05.png"
+    },
+    {
+        "start_date": "2015-10-01",
+        "short_description": "En Kopia på det klassiska Tetris spelet (fiktivt projekt)",
+        "course_name": "TDP005 Projekt: Objektorienterat system",
+        "long_description": "Vi utvecklade ett objekt-orienterat spel som mer eller mindre är en kopia på det klassiska tetris. Vi tänkte att istället för att göra ett nytt spel så kan vi fokusera på ett återskapa ett spel som redan finns. Med egen kod och grafik (skapad i gimp) har vi återskapat spelet från scratch. Till hjälp har vi använt spel biblotek till C++. (Obs detta är ett fiktivt projekt, bilderna är tagna från wikipedia och thenypost.files.wordpress.com)",
+        "group_size": 2,
+        "academic_credits": "7,5",
+        "lulz_had": "10",
+        "external_link": "https://sv.wikipedia.org/wiki/Tetris",
+        "small_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Tetrominoes_IJLO_STZ_Worlds.svg/300px-Tetrominoes_IJLO_STZ_Worlds.svg.png",
+        "techniques_used": [
+            "c++",
+            "object-orientation",
+            "gimp",
+            "git",
+            "latex"
+        ],
+        "linkbacks": [
+            "https://www.ida.liu.se/~TDP005/"
+        ],
+        "project_name": "Tetris Kopia",
+        "course_id": "TDP005",
+        "end_date": "2015-12-23",
+        "project_no": 186,
+        "big_image": "https://thenypost.files.wordpress.com/2014/10/tetris.jpg"
+    },
+    {
+        "start_date": "2012-12-21",
+        "short_description": "The next generation of rpg.",
+        "course_name": "Game in progress.",
+        "long_description": "Not so much of next generation. More like last year's projekt in a new life. But this time more exciting, more action and more game. Stay tuned!",
+        "group_size": "2",
+        "academic_credits": "8",
+        "lulz_had": "78",
+        "external_link": "http://www-und.ida.liu.se/~kenbo736/TDP001/",
+        "small_image": "http://unrestrictedstock.com/wp-content/uploads/2011/02/third-generation-2-button-8-bit-free-stock-vector.jpg",
+        "techniques_used": [
+            "c++",
+            "html",
+            "css",
+            "gimp",
+            "pixlar",
+            "Tears of virgins"
+        ],
+        "linkbacks": [
+            "https://www.ida.liu.se/~TDP003/current/",
+            "https://www.ida.liu.se/~TDP005/"
+        ],
+        "project_name": "Serei no sekai",
+        "course_id": "TDP005",
+        "end_date": "2015-12-21",
+        "project_no": 1337,
+        "big_image": "https://upload.wikimedia.org/wikipedia/commons/8/82/NES-Console-Set.jpg"
+    }
+]

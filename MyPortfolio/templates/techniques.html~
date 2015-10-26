@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+<div id="content">
+	<h1 id=index>Techniques</h1>
+		<tb id=techs>
+		{% for tech in techs %}	
+			<p id=fuc>{{tech}}<br></p>		
+			{% for var in techniqs[tech] %}
+				<a id=techni href=http://127.0.0.1:5000/project/{{var['id']}}><td>{{var['name']}}</td></a>
+			{% endfor %}
+			<br>
+		{% endfor %}
+		</tb>
+</div>
+{% endblock %}

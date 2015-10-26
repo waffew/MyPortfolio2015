@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+<div id="content">
+	<div class="container"><img src="{{project['small_image']}}"></div>
+	<br><h1>{{project['project_name']}}</h1>
+	<p>{{project['short_description']}}</p><br><br><br>
+	<p>{{project['long_description']}}</p><br><br><br>
+	<img id="bimg" src="{{project['big_image']}}"><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+{% endblock %}
